@@ -1,4 +1,5 @@
-public class Main
+import java.util.Scanner;
+public class palindrome
 {
     public static boolean palindrome(String s)
     {
@@ -16,7 +17,9 @@ public class Main
     }
 
 	public static void main(String[] args) {
-		String s = "abkdkb";
+		Scanner tr = new Scanner(System.in);
+        System.out.println("Enter String to check if it is palindrome or not?");
+        String s = tr.nextLine();
 		boolean a = palindrome(s);
 		System.out.println(a);
 		
